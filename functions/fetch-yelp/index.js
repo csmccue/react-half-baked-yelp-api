@@ -20,7 +20,6 @@ const handler = async (event) => {
     console.log(error);
     return {
       statusCode: 500,
-      // body: JSON.stringify({ error: 'Failed fetching data' }),
     };
   }
   // add code here to fetch data from yelp API
