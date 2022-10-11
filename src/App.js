@@ -33,11 +33,11 @@ function App() {
       <div className="query-form">
         <div className="form-control">
           <label>Zip:</label>
-          <input type="text" placeholder="zip" />
+          <input type="text" placeholder="zip" value={zip} onChange={(e) => setZip(e.target.value)}/>
         </div>
         <div className="form-control">
           <label>Query:</label>
-          <input type="text" placeholder="Search..." />
+          <input type="text" placeholder="Search..." value={search} onChange={(e) => setSearch(e.target.value)} />
         </div>
         <button onClick={handleSearch}>Search</button>
       </div>
